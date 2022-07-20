@@ -1,13 +1,12 @@
 import Router from 'next/router'
 import { types } from 'react-bricks/frontend'
-
 import bricks from './bricks'
 import pageTypes from './pageTypes'
 import NextLink from './NextLink'
 
 const config: types.ReactBricksConfig = {
-  appId: "65517ab7-d392-4393-9feb-39d312de0366",
-  apiKey: "b1303742-66ef-4032-ab03-2198701e4f7a",
+  appId: process.env.NEXT_PUBLIC_APP_ID,
+  apiKey: process.env.API_KEY,
   pageTypes,
   bricks,
   logo: '/logo.svg',
